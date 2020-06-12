@@ -1,0 +1,29 @@
+{
+  "name": "sanjeev.kumar/phpcicduat",
+  "description": "PHP CI/CD UAT.",
+  "keywords": ["php", "phpcicdgitlab"],
+  "homepage": "https://gitlab.com/sanjeevezpg/phpcicduat",
+  "type" : "library",
+  "license": "proprietary",
+  "authors": [{
+    "name": "Kount",
+    "email": "support@sanjeev.com"
+  }],
+  "require": {
+    "php": ">=7.2.5",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-xml": "*",
+    "phpunit/php-code-coverage": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8.5.2",
+    "phpdocumentor/phpdocumentor": "2.*"
+  },
+  "autoload": {
+    "classmap": [
+      "./src/"
+    ]
+  }
+}
