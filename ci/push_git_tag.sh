@@ -13,7 +13,7 @@ git config --global user.name "@sanjee"
 git config --global user.email "sanjeev@gmail.com"
 
 # set the push URL differently to leverage SSH protocol
-git remote set-url --push origin git@gitlab.com:sanjeevezpg/phpcicduat.git
+git remote set-url --push origin git@gitlab.com:sanjeevezpg/phpcicdproject.git
 git remote -v
 
 # getting version from setting.ini file
