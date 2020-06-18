@@ -2,7 +2,7 @@
   "name": "sanjeev.kumar/phpcicduat",
   "description": "PHP CI/CD UAT.",
   "keywords": ["php", "phpcicdgitlab"],
-  "homepage": "https://gitlab.com/sanjeevezpg/phpcicduat",
+  "homepage": "https://gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject",
   "type" : "library",
   "license": "proprietary",
   "authors": [{
