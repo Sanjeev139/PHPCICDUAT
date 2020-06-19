@@ -1,4 +1,4 @@
 # PHPCICDProject
 
-This project is setup for PHP GitLab CI/CD Test.
+This project is setup for PHP GitLab CI/CD.
 
