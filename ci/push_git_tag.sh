@@ -20,7 +20,7 @@ git remote -v
 # getting version from setting.ini file
 # eval $(cat settings.ini)
 # echo $vers
-vers=$(awk -F "=" '/vers/ {print $2}' src/settings.ini)
+vers=$(awk -F "=" '/VERSION_NUMBER/ {print $2}' src/settings.ini)
 echo $vers
 
 # set the git tag to the current version
