@@ -37,6 +37,3 @@ git tag $versionLabel
 # merge release branch with the new version number back into develop
 git checkout $masterBranch
 git merge --no-ff $masterBranch
- 
-# remove release branch
-git branch -d $masterBranch
