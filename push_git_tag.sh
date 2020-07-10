@@ -16,6 +16,7 @@ git config --global user.email "sanjeev@gmail.com"
 git remote set-url --push origin git@gitlab.com:sanjeevezpg/phpcicd.git
 git remote -v
 
+
 # getting version from setting.ini file
 # eval $(cat setting.ini)
 # echo $vers
