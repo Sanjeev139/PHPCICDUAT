@@ -5,6 +5,7 @@ set -e
 set -u
 
 # decrypt the private key
+echo ${SSH_PRIVATE_KEY}
 echo ${SSH_PRIVATE_KEY} > ./gitlab-deploy-key
 chmod 400 ./gitlab-deploy-key
 
