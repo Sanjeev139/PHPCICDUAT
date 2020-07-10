@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+
 set -e
 set -u
 
 # decrypt the private key
-echo "$SSH_PRIVATE_KEY" > ./gitlab-deploy-key
+echo ${SSH_PRIVATE_KEY} > ./gitlab-deploy-key
 chmod 400 ./gitlab-deploy-key
 
 # set the git username/email to be able to perform git operations
@@ -13,14 +14,13 @@ git config --global user.name "@sanjee"
 git config --global user.email "sanjeev@gmail.com"
 
 # set the push URL differently to leverage SSH protocol
-git remote set-url --push origin git@gitlab.com:sanjeevezpg/phpcicd.git
+git remote set-url --push origin git@gitlab.com:gitlab-ci-cd-pipeine/phpcicdproject.git
 git remote -v
 
-
 # getting version from setting.ini file
-# eval $(cat setting.ini)
+# eval $(cat settings.ini)
 # echo $vers
-vers=$(awk -F "=" '/vers/ {print $2}' src/settings.ini)
+vers=$(awk -F "=" '/SDK_VERSION/ {print $2}' src/settings.ini)
 echo $vers
 
 # set the git tag to the current version
