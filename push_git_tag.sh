@@ -28,6 +28,5 @@ git tag -a $VERSION -m "Setting version as tag during build."
 # echo 'ssh -i ./gitlab-deploy-key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $*' > ssh
 # chmod +x ssh
 # GIT_SSH='./ssh' git push origin $VERSION
-echo 'ssh -o StrictHostKeyChecking=no $*' > ssh
-chmod +x ssh
-GIT_SSH='./ssh' git push origin $VERSION
+StrictHostKeyChecking=no
+git push --tags
