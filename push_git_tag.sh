@@ -2,8 +2,8 @@
 set -e
 set -u
 # decrypt the private key
-echo "$SSH_PRIVATE_KEY" > ./gitlab-deploy-key
-chmod 400 ./gitlab-deploy-key
+# echo "$SSH_PRIVATE_KEY" > ./gitlab-deploy-key
+# chmod 400 ./gitlab-deploy-key
 # set the git username/email to be able to perform git operations
 echo git version: $(git --version)
 git config --global user.name "@kount"
@@ -25,6 +25,7 @@ git tag -a $VERSION -m "Setting version as tag during build."
 # push the git tag
 # leverage GIT_SSH option to use a dedicated SSH key
 # see https://git-scm.com/docs/git#git-codeGITSSHcode for documentation of this feature
-echo 'ssh -i ./gitlab-deploy-key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $*' > ssh
-chmod +x ssh
-GIT_SSH='./ssh' git push origin $VERSION
+# echo 'ssh -i ./gitlab-deploy-key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $*' > ssh
+# chmod +x ssh
+# GIT_SSH='./ssh' git push origin $VERSION
+GIT_SSH=git push origin $VERSION
