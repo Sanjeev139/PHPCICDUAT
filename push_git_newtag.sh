@@ -9,10 +9,10 @@ versionLabel=v$1
 # establish branch and tag name variables
 devBranch=develop
 masterBranch=master
-releaseBranch=release-$versionLabel
+# releaseBranch=release-$versionLabel
  
 # create the release branch from the -master branch
-git checkout -b $releaseBranch $masterBranch
+git checkout -b $masterBranch
  
 # file in which to update version number
 versionFile="src/settings.ini"
@@ -29,14 +29,14 @@ git commit -am "Incrementing version number to $versionLabel"
  
 # merge release branch with the new version number into master
 git checkout $masterBranch
-git merge --no-ff $releaseBranch
+git merge --no-ff $masterBranch
  
 # create tag for new version from -master
 git tag $versionLabel
  
 # merge release branch with the new version number back into develop
 git checkout $masterBranch
-git merge --no-ff $releaseBranch
+git merge --no-ff $masterBranch
  
 # remove release branch
-git branch -d $releaseBranch
+git branch -d $masterBranch
