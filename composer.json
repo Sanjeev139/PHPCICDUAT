@@ -10,8 +10,8 @@
     "email": "support@sanjeev.com"
   }],
   "repositories": [
-        {"type":"vcs", "url": "https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject"},
-        {"type":"git", "url": "https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject.git"},
+        {"type":"vcs", "url": "https://gitlab-ci-token:AV_PKKXgryY4mxazYeRF@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject"},
+        {"type":"git", "url": "https://gitlab-ci-token:AV_PKKXgryY4mxazYeRF@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject.git"},
         {"type": "composer", "url": "https://repo.packagist.com/in-time-tec/"},
         {"packagist.org": false}
    ],
