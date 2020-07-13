@@ -9,14 +9,12 @@
     "name": "Kount",
     "email": "support@sanjeev.com"
   }],
-  {
-    "repositories": [
+  "repositories": [
         {"type": "vcs", "url": "https://gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject"},
         {"type": "git", "url": "https://gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject.git"},
         {"type": "composer", "url": "https://repo.packagist.com/in-time-tec/"},
         {"packagist.org": false}
-    ]
-  },
+   ],
   "require": {
     "php": ">=7.2.5",
     "ext-curl": "*",
