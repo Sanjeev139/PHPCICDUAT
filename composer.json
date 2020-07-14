@@ -1,5 +1,5 @@
 {
-  "name": "sanjeev.kumar/phpcicduat_testingpvt",
+  "name": "sanjeev.kumar/phpcicduat",
   "description": "PHP CI/CD UAT.",
   "keywords": ["php", "phpcicdgitlab"],
   "homepage": "https://gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject",
@@ -9,12 +9,6 @@
     "name": "Kount",
     "email": "support@sanjeev.com"
   }],
-  "repositories": [
-        {"type":"vcs", "url": "https://gitlab-ci-token:AV_PKKXgryY4mxazYeRF@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject"},
-        {"type":"git", "url": "https://gitlab-ci-token:AV_PKKXgryY4mxazYeRF@gitlab.com/gitlab-ci-cd-pipeine/phpcicdproject.git"},
-        {"type": "composer", "url": "https://repo.packagist.com/in-time-tec/"},
-        {"packagist.org": false}
-   ],
   "require": {
     "php": ">=7.2.5",
     "ext-curl": "*",
