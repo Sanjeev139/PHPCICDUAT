@@ -54,7 +54,8 @@ class Kount_Ris_Data_KcEvent {
    * @return string
    */
   public function getDecision () {
-    return ($this->decision != null) ? $this->decision : '';
+    // return ($this->decision != null) ? $this->decision : '';
+    return $this->decision;
   }
 
   /**
@@ -63,7 +64,8 @@ class Kount_Ris_Data_KcEvent {
    * @return string
    */
   public function getExpression () {
-    return ($this->expression != null) ? $this->expression : '';
+    // return ($this->expression != null) ? $this->expression : '';
+    return $this->expression;
   }
 
   /**
@@ -72,7 +74,8 @@ class Kount_Ris_Data_KcEvent {
    * @return string
    */
   public function getCode () {
-    return ($this->code != null) ? $this->code : '';
+    // return ($this->code != null) ? $this->code : '';
+    return $this->code;
   }
 
 } // Kount_Ris_Data_KcEvent
